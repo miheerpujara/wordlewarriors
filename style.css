@@ -1,0 +1,37 @@
+* {
+	font-family: arial;
+	font-size: 100%;
+}
+/* h1-h6 */
+	h1{font-size:  1.75rem;}
+	h2{font-size:  1.5rem;}
+	h3{font-size:  1.25rem;}
+	h4{font-size:  1rem;}
+	h5{font-size:  0.75rem;}
+	h6{font-size:  0.5rem;}
+/* no purple hyperlinks */
+	a:visited {color: blue;}
+/*no border on iframes*/
+iframe {border: none;}
+/* format accordion-label, add [+] before, and change to [-] when parent accordion-item is open*/
+.accordion-label {
+	font-size: 1.5rem;
+	width: fit-content;
+	user-select: none;
+}
+.accordion-label:before {
+	content: "[+] ";
+	font-size: 1.25rem;
+}
+.accordion-item.open .accordion-label:before {
+	content: "[–] "
+}
+/* set accordion-content to not be shown initially, then change height to fit conent when parent accordion-item is open */
+.accordion-content {
+	height: 0px;
+	overflow: hidden;
+	margin: 5px 30px
+}
+.accordion-item.open .accordion-content {
+	height: auto;
+}
