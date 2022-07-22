@@ -16,8 +16,11 @@ iframe {border: none;}
 /* format accordion-label, add [+] before, and change to [-] when parent accordion-item is open*/
 .accordion-label {
 	font-size: 1.5rem;
-	width: fit-content;
+	width: 100%;
+	border: 2px solid black;
+	background-color: lightgray;
 	user-select: none;
+	padding-bottom: 1px;
 }
 .accordion-label:before {
 	content: "[+] ";
@@ -30,7 +33,7 @@ iframe {border: none;}
 .accordion-content {
 	height: 0px;
 	overflow: hidden;
-	margin: 5px 30px
+	margin: 5px 10px
 }
 .accordion-item.open .accordion-content {
 	height: auto;
